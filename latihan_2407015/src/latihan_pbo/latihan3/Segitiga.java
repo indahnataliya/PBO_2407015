@@ -1,19 +1,10 @@
 package latihan_pbo.latihan3;
 
-public class Segitiga extends BangunDatar {
-
-    private double alas;
-    private double tinggi;
-
-    public Segitiga(double alas, double tinggi) {
-        this.alas = alas;
-        this.tinggi = tinggi;
+public class segitiga extends BangunDatar{
+    public double Luassegitiga(){
+        return 0.5* getAlas() * getTinggi();
     }
-
-    @Override
-    public void hitung() {
-        luas = 0.5 * alas * tinggi;
-        double sisiMiring = Math.sqrt(alas * alas + tinggi * tinggi);
-        keliling = alas + tinggi + sisiMiring;
+    public double KelilingSegitiga(){
+        return 3 * getSisi();
     }
 }
